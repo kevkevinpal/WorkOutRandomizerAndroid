@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         Button abbsButton = new Button(this);
         abbsButton.setBackgroundColor(Color.WHITE);
         abbsButton.setTextColor(Color.rgb(0, 100, 0));
-        abbsButton.setText("Abbs");
+        abbsButton.setText("Abs");
 
 
 
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         mainButton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v){
-                        String[] arms = {"30 pushups","10,10,10,10","8 Wolf Ups", "2 Sleds","10 HandStand Push Ups", "20 Dips", "Plance with Feet Supported","3,2,1 Push up count"};
+                        String[] arms = {"30 Pushups","10,10,10,10","8 Wolf Ups", "2 Sleds","10 HandStand Push Ups", "20 Dips", "Plance with Feet Supported","3,2,1 Push up count"};
 
                         int chooser = (int)(Math.random()*arms.length);
                         workOuts.setText(arms[chooser]);
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         abbsButton.setOnClickListener(
                     new Button.OnClickListener(){
                         public void onClick(View v){
-                            String[] abbs = {"30 hallow rocks","10,20,30,40,50,60","20 V-Ups", "Pyrimid from 10","2 min Plance hold", "3 sets of 10 sec Flutter kicks and scissors", "30 Side arches with side plance"};
+                            String[] abbs = {"30 hollow rocks","10,20,30,40,50,60","20 V-Ups", "Pyrimid from 10","2 min Plank hold", "3 sets of 10 sec Flutter kicks and scissors", "30 Side arches with side plank"};
 
                             int chooser = (int)(Math.random()*abbs.length);
                             workOuts.setText(abbs[chooser]);
