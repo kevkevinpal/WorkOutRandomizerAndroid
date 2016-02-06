@@ -139,10 +139,20 @@ public class MainActivity extends AppCompatActivity {
 
                         int chooser = (int)(Math.random()*arms.length);
                         workOuts.setText(arms[chooser]);
-                        chooser = (int)(Math.random()*arms.length);
-                        workOuts2.setText(arms[chooser]);
-                        chooser = (int)(Math.random()*arms.length);
-                        workOuts3.setText(arms[chooser]);
+
+
+                        int chooser2 = (int)(Math.random()*arms.length);
+                        while(chooser2 == chooser){
+                            chooser2 = (int)(Math.random()*arms.length);
+                        }
+                        workOuts2.setText(arms[chooser2]);
+
+
+                        int chooser3 = (int)(Math.random()*arms.length);
+                        while(chooser3 == chooser2 || chooser3 == chooser){
+                            chooser3 = (int)(Math.random()*arms.length);
+                        }
+                        workOuts3.setText(arms[chooser3]);
 
                     }
                 }
@@ -155,10 +165,17 @@ public class MainActivity extends AppCompatActivity {
 
                             int chooser = (int)(Math.random()*abbs.length);
                             workOuts.setText(abbs[chooser]);
-                            chooser = (int)(Math.random()*abbs.length);
-                            workOuts2.setText(abbs[chooser]);
-                            chooser = (int)(Math.random()*abbs.length);
-                            workOuts3.setText(abbs[chooser]);
+                            int chooser2 = (int)(Math.random()*abbs.length);
+                            while(chooser2 == chooser){
+                                chooser2 = (int)(Math.random()*abbs.length);
+                            }
+                            workOuts2.setText(abbs[chooser2]);
+
+                            int chooser3 = (int)(Math.random()*abbs.length);
+                            while(chooser3 == chooser2 || chooser3 == chooser){
+                                chooser3 = (int)(Math.random()*abbs.length);
+                            }
+                            workOuts3.setText(abbs[chooser3]);
                         }
 
                     });
